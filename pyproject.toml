@@ -1,0 +1,28 @@
+[project]
+name = "python-interview-prep"
+version = "0.1.0"
+description = "Advanced Python puzzles and solutions for interview preparation"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "ruff>=0.1.0",
+    "black>=23.0.0",
+]
+web = [
+    "flask>=3.0.0",
+    "fastapi>=0.104.0",
+    "pydantic>=2.5.0",
+    "uvicorn>=0.24.0",
+]
+
+[tool.uv]
+dev-dependencies = []
+
+[tool.ruff]
+line-length = 88
+
+[tool.black]
+line-length = 88
